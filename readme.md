@@ -6,6 +6,8 @@
 
 Descripción: 
 
-Tecnologías: HTML - CSS - 
+Tecnologías: HTML - CSS - JS
 
 Versionado con Git
+
+Se creo un formulario para Login
