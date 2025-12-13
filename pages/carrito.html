@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Talento Tech</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="cabecera">
+            <img src="../assets/img/circulo.png" alt="Logo">
+            <h1>Infinity</h1>
+        </div>
+        <h2 class="lema">Tu universo en tecnología</h2>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="../index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="../index.html#producto">Productos</a>
+            </li>
+            <li>
+                <a href="../pages/login.html">Login</a>
+            </li>
+            <li>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M7 22q-.825 0-1.412-.587T5 20t.588-1.412T7 18t1.413.588T9 20t-.587 1.413T7 22m10 0q-.825 0-1.412-.587T15 20t.588-1.412T17 18t1.413.588T19 20t-.587 1.413T17 22M6.15 6l2.4 5h7l2.75-5zM5.2 4h14.75q.575 0 .875.513t.025 1.037l-3.55 6.4q-.275.5-.737.775T15.55 13H8.1L7 15h12v2H7q-1.125 0-1.7-.987t-.05-1.963L6.6 11.6L3 4H1V2h3.25zm3.35 7h7z" />
+                    </svg>
+                    <div class="count">0</div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="carrito-banner">
+            <img src="../assets/img/imagen.webp" alt="carrito">
+
+            <div class="banner-texto">
+                <h1>Bienvenid@ a mi Tienda Online</h1>
+                <p>Los mejores productos al mejor precio</p>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <!--<section id="itemProducts">
+        <h2>Productos Seleccionados</h2>
+        <table>
+            <thead>
+                <th>
+                    <td>Nombre del Producto</td>
+                    <td>Precio</td>
+                    <td>Cantidad</td>
+                    <td></td>
+                </th>
+            </thead>
+            <tbody></tbody>
+            <tfoot></tfoot>
+        </table>
+        <button onclick="limpiarCarrito()">Limpiar Carrito</button>
+
+    </section> -->
+
+    <section id="itemProducts">
+        <h2>Productos Seleccionados</h2>
+
+        <div class="cart-container">
+            <table id="cartTable"></table>
+
+            <div class="total">
+                Total: $<span id="totalPrice">0</span>
+            </div>
+
+            <button onclick="limpiarCarrito()" class="clear-btn">Limpiar carrito</button>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="contact">
+            <a href="">
+                <!--WhatsApp-->
+            </a>
+
+        </div>
+        ©Todos los derechos reservados
+        <br>
+        Proyecto Pre-Entrega - Talento Tech
+
+    </footer>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

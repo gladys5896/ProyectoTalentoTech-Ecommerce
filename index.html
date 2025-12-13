@@ -7,6 +7,7 @@
     <title>Proyecto Talento Tech</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body>
@@ -23,19 +24,49 @@
                 <a href="#">Inicio</a>
             </li>
             <li>
-                <a href="#productos">Productos</a>
+                <a href="#producto">Productos</a>
+            </li>
+            <li>
+                <a href="#contacto">Contacto</a>
             </li>
             <li>
                 <a href="./pages/login.html">Login</a>
             </li>
             <li>
-                <a href="./pages/carrito.html">Carrito</a>
+                <a onclick="handleCart()" href="./pages/carrito.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M7 22q-.825 0-1.412-.587T5 20t.588-1.412T7 18t1.413.588T9 20t-.587 1.413T7 22m10 0q-.825 0-1.412-.587T15 20t.588-1.412T17 18t1.413.588T19 20t-.587 1.413T17 22M6.15 6l2.4 5h7l2.75-5zM5.2 4h14.75q.575 0 .875.513t.025 1.037l-3.55 6.4q-.275.5-.737.775T15.55 13H8.1L7 15h12v2H7q-1.125 0-1.7-.987t-.05-1.963L6.6 11.6L3 4H1V2h3.25zm3.35 7h7z" />
+                    </svg>
+                    <div class="count">0</div>
+                </a>
             </li>
         </ul>
     </nav>
     <main>
+        <!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"-->
         <!--img src="./assets/img/imagen.webp" alt=""-->
-        <h2>Bienvenid@ a mi Tienda On-line</h2>
+
+        <div class="carousel">
+            <div class="carousel-track">
+                <img src="./assets/img/carrousel_Imagen_1.webp" alt="Banner 1">
+                <img src="./assets/img/carrousel_Imagen_2.webp" alt="Banner 2">
+                <img src="./assets/img/carrousel_Imagen_3.webp" alt="Banner 3">
+            </div>
+            <!-- TEXTO -->
+            <div class="carousel-text">
+                <h2>Infinity</h2>
+                <p>Tu universo en tecnología</p>
+            </div>
+
+            <button class="carousel-btn prev">&#10094;</button>
+            <button class="carousel-btn next">&#10095;</button>
+
+            <div class="carousel-dots"></div>
+        </div>
+
+
+
     </main>
     <section id="producto" class="container-product">
         <h3>Productos</h3>
@@ -46,8 +77,8 @@
                     <h4>Microprocesador AMD </h4>
                     <img src="./assets/img/AMD_Ryzen_9.webp" alt="Producto1">
                     <p>Procesador Amd Ryzen 9 7900X 5.6 Ghz - AM5</p>
-                    <p>Precio: <span>$786.040,20</span></p>
-                    
+                    <p>Precio: <span>$786040</span></p>
+
                 </a>
                 <button>Comprar</button>
             </div>
@@ -56,8 +87,8 @@
                     <h4>Fuente de Alimentación</h4>
                     <img src="./assets/img/FuenteFocus80Plus750FX.webp" alt="Producto1">
                     <p>Fuente Focus 80 Plus 750FX</p>
-                    <p>Precio: <span>$75.800,00</span></p>
-                    
+                    <p>Precio: <span>$75800</span></p>
+
                 </a>
                 <button>Comprar</button>
             </div>
@@ -66,8 +97,8 @@
                     <h4>Teclado Inalámbrico</h4>
                     <img src="./assets/img/TecladoInalambricoBlanco.webp" alt="Producto1">
                     <p>Teclado Inalámbrico Gammer Blanco Retroiluminado</p>
-                    <p>Precio: <span>$29.399,00</span></p>
-                    </a>
+                    <p>Precio: <span>$29399</span></p>
+                </a>
                 <button>Comprar</button>
             </div>
             <div class="card">
@@ -75,8 +106,8 @@
                     <h4>Gabinete</h4>
                     <img src="./assets/img/GabineteGammer.webp" alt="Producto1">
                     <p>Gabinete Gamer Pc Atx Gadnic Apocalipsis</p>
-                    <p>Precio: <span>$45.900,00</span></p>
-                    
+                    <p>Precio: <span>$45900</span></p>
+
                 </a>
                 <button>Comprar</button>
             </div>
@@ -85,8 +116,8 @@
                     <h4>Motherboard GigaByte </h4>
                     <img src="./assets/img/MotherGigabyteA520MKV2.webp" alt="Producto1">
                     <p>Mother Gigabyte A520MKV2</p>
-                    <p>Precio: <span>$91.400,00</span></p>
-                    
+                    <p>Precio: <span>$91400</span></p>
+
                 </a>
                 <button>Comprar</button>
             </div>
@@ -95,16 +126,17 @@
                     <h4>Mouse Gammer Inalámbrico</h4>
                     <img src="./assets/img/MouseGammerInalambrico.webp" alt="Producto1">
                     <p>Mouse Gammer Inalámbrico</p>
-                    <p>Precio: <span>$190.559,00</span></p>
-                    
+                    <p>Precio: <span>$190559</span></p>
+
                 </a>
                 <button>Comprar</button>
             </div>
         </div>
     </section>
-    <section><div class="video-container">
-    <video src="./assets/video/Video_de_Página_Web_en_Construcción.mp4" autoplay loop controls muted></video>
-</div>
+    <section>
+        <div class="video-container">
+            <video src="./assets/video/Video_de_Página_Web_en_Construcción.mp4" autoplay loop controls muted></video>
+        </div>
 
     </section>
     <section id="resenia"></section>
@@ -131,7 +163,8 @@
         Proyecto Pre-Entrega - Talento Tech
 
     </footer>
-
+    <script src="./js/app.js"></script>
+    <!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script-->
 </body>
 
 </html>
